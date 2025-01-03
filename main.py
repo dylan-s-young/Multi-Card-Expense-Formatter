@@ -1,8 +1,6 @@
 import os
 import pandas as pd
 from openpyxl.styles import Alignment
-from openpyxl.chart import BarChart, Reference
-from openpyxl import Workbook
 
 class ExpenseBuilder:
     def __init__(self, folderPath):
@@ -113,7 +111,6 @@ class ExpenseBuilder:
         except Exception as e:
             print(f"{e}")
 
-
     def parseAmericanExpressExcel(self, file_path):
         '''
         American Express .xlsx are formatted weirdly. 
@@ -148,9 +145,6 @@ class ExpenseBuilder:
         Implement OCR 
         '''
         pass
-
-
-
 
 if __name__ == "__main__":
     #path of folder with .xlsx & .cs
